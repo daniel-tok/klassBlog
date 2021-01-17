@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' href='styles.css'>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<style>
+.item1 { grid-area: header;
+         background-image: url(colorSplash.jpg);
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;}
+.item2 { grid-area: menu; }
+.item3 { grid-area: articles}
+.item4 { grid-area: footer; }
+.item5 { grid-area: navBar}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'navBar navBar navBar navBar navBar navBar'
+    'header  header header header header header'
+    'menu articles articles articles articles articles'
+    'footer footer footer footer footer footer ';
+  grid-gap: 10px;
+  background-color: grey;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+table { border-collapse: collapse;
+        table-layout: auto;}
+
+tr {border: none;}
+
+th, td {
+    word-wrap: break-word;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    padding: 15px;
+    }
+
+</style>
+
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class='item5' style='background-color:#3D3E3D; color:white'>
+    <table align='left'>
+      <tr>
+        <td style='border-left: none'></td>
+        <td><img src="https://lh4.googleusercontent.com/cCLauA6hsx4cLTICWVOpMLethYQoUhOV1NaeNV2OZWRc8rrga4w01AjRketSj4CUGwlM6nPC=w16383" height=50px width=50px border-width=5px style='padding:10px'></td>
+        <td> The Alice Smith School </td>
+        <td> Home </td>
+        <td> About </td>
+        <td> Events </td>
+        <td> Contribute </td>
+      </tr>
+    </table>
+  </div>
+
+
+  <div class="item1">
+      <p style='font-size: 80px; color: white'> KLASS Students Blog </p>
+      <p style='font-size: 20px; color: white'> A place for KLASS students to post what's on their minds. </p>
+  </div>
+
+  <div class="item2">
+      <table class='center' width='90%'>
+        <tr>
+          <td style='border:none; font-size: 30px'><a href='https://sites.google.com/alice-smith.edu.my/epstudentgateway/home'>Back to Gateway </a> </td>
+        </tr>
+        <tr>
+          <td style='font-size: 25px'> Subjects </td>
+        </tr>
+        <tr>
+          <tr>
+            <td><a href='https://sites.google.com/alice-smith.edu.my/newmathematics-computing/home' class='subjectLinks'>Mathematics & Computing </a></td>
+          </tr>
+        <tr>
+          <td><a href='https://sites.google.com/alice-smith.edu.my/newscience-dt/home' class='subjectLinks'>Science & DT </a></td>
+        </tr>
+        <tr>
+          <td><a href='https://sites.google.com/alice-smith.edu.my/english-and-media-faculty/faculty-home' class='subjectLinks'>English & Media </a></td>
+        </tr>
+        <tr>
+          <td><a href='https://sites.google.com/alice-smith.edu.my/newhumanities/home' class='subjectLinks'>Humanities</a></td>
+        </tr>
+        <tr>
+          <td><a href='https://sites.google.com/alice-smith.edu.my/pe-and-sports-ep/home' class='subjectLinks'>PE & Sport </a></td>
+        </tr>
+        <tr>
+          <td><a href='https://sites.google.com/alice-smith.edu.my/klassmodernforeignlanguages/home' class='subjectLinks'>MFL </a></td>
+        </tr>
+        <tr>
+          <td><a href='https://sites.google.com/alice-smith.edu.my/cearts/home' class='subjectLinks'>CEA </a></td>
+        </tr>
+        <tr>
+          <td><a href='https://sites.google.com/a/alice-smith.edu.my/learning-support-unit/home'class='subjectLinks'>PLF </a></td>
+        </tr>
+
+
+
+      </table>
+  </div>
+
+  <div class="item3">
+      <table class='center' width=90%>
+        <tr>
+          <td style='border:none; font-size: 60px' align='left' colspan='2' >Latest blogs </td>
+        </tr>
+
+        <!-- ARTICLE PAIR ROW 1 -->
+
+        <tr>
+          <td>
+
+            <table class='center' width=90% >
+              <tr>
+                <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img></td>
+
+                <td class='articleHeader' align='left'>Article title</td>
+              </tr>
+              <tr>
+                <td align='left' class='articleDescription'> Article description </td>
+              </tr>
+              <tr>
+                <td align='left' class='articleAuthor'> by Author - Date </td>
+            </table>
+
+          </td>
+          <td>
+            <table class='center' width=90%>
+              <tr>
+                <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img> </td>
+                <td class='articleHeader' align='left'>Article title</td>
+              </tr>
+              <tr>
+                <td align='left' class='articleDescription'> Article description </td>
+              </tr>
+              <tr>
+                <td align='left' class='articleAuthor'> by Author - Date </td>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- ARTICLE PAIR ROW 2 -->
+
+        <tr>
+          <td>
+
+            <table class='center' width=90% >
+              <tr>
+                <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img></td>
+
+                <td class='articleHeader' align='left'> Article title </td>
+              </tr>
+              <tr>
+                <td align='left' class='articleDescription'> Article description </td>
+              </tr>
+              <tr>
+                <td align='left' class='articleAuthor'> by Author - Date </td>
+            </table>
+
+          </td>
+          <td>
+            <table class='center' width=90%>
+              <tr>
+                <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img> </td>
+                <td class='articleHeader' align='left'> Article title </td>
+              </tr>
+              <tr>
+                <td align='left' class='articleDescription'> Article description </td>
+              </tr>
+              <tr>
+                <td align='left' class='articleAuthor'> by Author - Date </td>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- ARTICLE PAIR ROW 3 -->
+
+        <tr>
+          <td>
+
+            <table class='center' width=90% >
+              <tr>
+                <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img></td>
+
+                <td class='articleHeader' align='left'> Article title </td>
+              </tr>
+              <tr>
+                <td align='left' class='articleDescription'> Article description </td>
+              </tr>
+              <tr>
+                <td align='left' class='articleAuthor'> by Author - Date </td>
+            </table>
+
+          </td>
+          <td>
+            <table class='center' width=90%>
+              <tr>
+                <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img> </td>
+                <td class='articleHeader' align='left'> Article title </td>
+              </tr>
+              <tr>
+                <td align='left' class='articleDescription'> Article description </td>
+              </tr>
+              <tr>
+                <td align='left' class='articleAuthor'> by Author - Date </td>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- ARTICLE PAIR ROW 4 -->
+
+        <tr>
+          <tr>
+            <td>
+
+              <table class='center' width=90% >
+                <tr>
+                  <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img></td>
+
+                  <td class='articleHeader' align='left'> Article title </td>
+                </tr>
+                <tr>
+                  <td align='left' class='articleDescription'> Article description </td>
+                </tr>
+                <tr>
+                  <td align='left' class='articleAuthor'> by Author - Date </td>
+              </table>
+
+            </td>
+            <td>
+              <table class='center' width=90%>
+                <tr>
+                  <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img> </td>
+                  <td class='articleHeader' align='left'> Article title </td>
+                </tr>
+                <tr>
+                  <td align='left' class='articleDescription'> Article description </td>
+                </tr>
+                <tr>
+                  <td align='left' class='articleAuthor'> by Author - Date </td>
+              </table>
+
+            </td>
+          </tr>
+        </tr>
+      </table>
+
+      <!-- ANNOUCEMENTS -->
+
+  </div>
+  <div class="item4" style='text-align: left; font-size: 8px'>
+    KLASS Gateway
+    <br>
+    Everything for the Alice Smith community – All in one place.
+    <br>
+    ©The Alice Smith Schools Association (001923-A)
+    <br>
+    www.alice-smith.edu.my
+    <br>
+
+  </div>
+
+</div>
+
+</body>
+</html>
