@@ -20,6 +20,10 @@ a:hover {
   margin-right: auto;
 }
 
+.authorName {
+  color: black
+}
+
 
 .articleHeader {
     font-size: 20px;

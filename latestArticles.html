@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' href='styles.css'>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<style>
+.item3 { grid-area: articles}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'articles';
+  grid-gap: 5px;
+  background-color: grey;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+table { border-collapse: collapse;
+        table-layout: auto;}
+
+tr {border: none;}
+
+th, td {
+    word-wrap: break-word;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    padding: 15px;
+    }
+
+</style>
+
+</head>
+<body>
+
+
+  <div class="grid-container">
+  <div class="item3">
+      <table class='center' width=90%>
+        <tr>
+          <td style='border:none; font-size: 60px' align='left' colspan='2' >Latest blogs </td>
+        </tr>
+
+        <!-- ARTICLE PAIR ROW 1 -->
+
+        <tr>
+          <td>
+
+            <table class='center' width=90% >
+              <tr>
+                <td width='30%' rowspan='3' padding='0'> <img src='fox.jpg' class='profilePicture'> </img></td>
+
+                <td class='articleHeader' align='left'><a href='articleTEMPLATE.html'>The quick brown fox jumped over the lazy dog</td>
+              </tr>
+              <tr>
+                <td align='left' class='articleDescription'> An intro to hyperactive canidae and lethargic canis familiaris </td>
+              </tr>
+              <tr>
+                <td align='left' class='articleAuthor'> by <a href='bloggerPageTEMPLATE.html'><b class='authorName'> Joe Bloggs </b></a> - 18th September 2021 </td>
+            </table>
+
+          </td>
+          <td>
+            <table class='center' width=90%>
+              <tr>
+                <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img> </td>
+                <td class='articleHeader' align='left'> Article title</td>
+              </tr>
+              <tr>
+                <td align='left' class='articleDescription'> Article description </td>
+              </tr>
+              <tr>
+                <td align='left' class='articleAuthor'> by Author - Date </td>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- ARTICLE PAIR ROW 2 -->
+
+        <tr>
+          <td>
+
+            <table class='center' width=90% >
+              <tr>
+                <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img></td>
+
+                <td class='articleHeader' align='left'> Article title </td>
+              </tr>
+              <tr>
+                <td align='left' class='articleDescription'> Article description </td>
+              </tr>
+              <tr>
+                <td align='left' class='articleAuthor'> by Author - Date </td>
+            </table>
+
+          </td>
+          <td>
+            <table class='center' width=90%>
+              <tr>
+                <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img> </td>
+                <td class='articleHeader' align='left'> Article title </td>
+              </tr>
+              <tr>
+                <td align='left' class='articleDescription'> Article description </td>
+              </tr>
+              <tr>
+                <td align='left' class='articleAuthor'> by Author - Date </td>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- ARTICLE PAIR ROW 3 -->
+
+        <tr>
+          <td>
+
+            <table class='center' width=90% >
+              <tr>
+                <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img></td>
+
+                <td class='articleHeader' align='left'> Article title </td>
+              </tr>
+              <tr>
+                <td align='left' class='articleDescription'> Article description </td>
+              </tr>
+              <tr>
+                <td align='left' class='articleAuthor'> by Author - Date </td>
+            </table>
+
+          </td>
+          <td>
+            <table class='center' width=90%>
+              <tr>
+                <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img> </td>
+                <td class='articleHeader' align='left'> Article title </td>
+              </tr>
+              <tr>
+                <td align='left' class='articleDescription'> Article description </td>
+              </tr>
+              <tr>
+                <td align='left' class='articleAuthor'> by Author - Date </td>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- ARTICLE PAIR ROW 4 -->
+
+        <tr>
+          <tr>
+            <td>
+
+              <table class='center' width=90% >
+                <tr>
+                  <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img></td>
+
+                  <td class='articleHeader' align='left'> Article title </td>
+                </tr>
+                <tr>
+                  <td align='left' class='articleDescription'> Article description </td>
+                </tr>
+                <tr>
+                  <td align='left' class='articleAuthor'> by Author - Date </td>
+              </table>
+
+            </td>
+            <td>
+              <table class='center' width=90%>
+                <tr>
+                  <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img> </td>
+                  <td class='articleHeader' align='left'> Article title </td>
+                </tr>
+                <tr>
+                  <td align='left' class='articleDescription'> Article description </td>
+                </tr>
+                <tr>
+                  <td align='left' class='articleAuthor'> by Author - Date </td>
+              </table>
+
+            </td>
+          </tr>
+        </tr>
+      </table>
+
+</div>
+
+</body>
+</html>
