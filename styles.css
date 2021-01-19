@@ -5,6 +5,7 @@ a {
     text-decoration: none;
 }
 
+
 a:hover {
   text-decoration: underline;
   color: #C71000
@@ -20,10 +21,20 @@ a:hover {
   margin-right: auto;
 }
 
+.articleTables {
+  border-spacing: 0;
+  border-collapse:collapse;
+}
+
 .authorName {
   color: black
 }
 
+.articlePicture {
+  width: auto;
+  height: auto;
+  border-radius: 5px
+}
 
 .articleHeader {
     font-size: 20px;
@@ -35,8 +46,8 @@ a:hover {
 }
 
 .articleAuthor {
-  font-size:10px;
-  color: grey
+  font-size:15px;
+  color: black
 }
 
 .profilePicture {

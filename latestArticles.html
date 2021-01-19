@@ -24,6 +24,7 @@
 table { border-collapse: collapse;
         table-layout: auto;}
 
+
 tr {border: none;}
 
 th, td {
@@ -45,149 +46,113 @@ th, td {
         <tr>
           <td style='border:none; font-size: 60px' align='left' colspan='2' >Latest blogs </td>
         </tr>
-
-        <!-- ARTICLE PAIR ROW 1 -->
-
-        <tr>
-          <td>
-
-            <table class='center' width=90% >
-              <tr>
-                <td width='30%' rowspan='3' padding='0'> <img src='fox.jpg' class='profilePicture'> </img></td>
-
-                <td class='articleHeader' align='left'><a href='articleTEMPLATE.html'>The quick brown fox jumped over the lazy dog</td>
-              </tr>
-              <tr>
-                <td align='left' class='articleDescription'> An intro to hyperactive canidae and lethargic canis familiaris </td>
-              </tr>
-              <tr>
-                <td align='left' class='articleAuthor'> by <a href='bloggerPageTEMPLATE.html'><b class='authorName'> Joe Bloggs </b></a> - 18th September 2021 </td>
-            </table>
-
-          </td>
-          <td>
-            <table class='center' width=90%>
-              <tr>
-                <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img> </td>
-                <td class='articleHeader' align='left'> Article title</td>
-              </tr>
-              <tr>
-                <td align='left' class='articleDescription'> Article description </td>
-              </tr>
-              <tr>
-                <td align='left' class='articleAuthor'> by Author - Date </td>
-            </table>
-
-          </td>
-        </tr>
-
-        <!-- ARTICLE PAIR ROW 2 -->
-
-        <tr>
-          <td>
-
-            <table class='center' width=90% >
-              <tr>
-                <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img></td>
-
-                <td class='articleHeader' align='left'> Article title </td>
-              </tr>
-              <tr>
-                <td align='left' class='articleDescription'> Article description </td>
-              </tr>
-              <tr>
-                <td align='left' class='articleAuthor'> by Author - Date </td>
-            </table>
-
-          </td>
-          <td>
-            <table class='center' width=90%>
-              <tr>
-                <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img> </td>
-                <td class='articleHeader' align='left'> Article title </td>
-              </tr>
-              <tr>
-                <td align='left' class='articleDescription'> Article description </td>
-              </tr>
-              <tr>
-                <td align='left' class='articleAuthor'> by Author - Date </td>
-            </table>
-
-          </td>
-        </tr>
-
-        <!-- ARTICLE PAIR ROW 3 -->
-
-        <tr>
-          <td>
-
-            <table class='center' width=90% >
-              <tr>
-                <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img></td>
-
-                <td class='articleHeader' align='left'> Article title </td>
-              </tr>
-              <tr>
-                <td align='left' class='articleDescription'> Article description </td>
-              </tr>
-              <tr>
-                <td align='left' class='articleAuthor'> by Author - Date </td>
-            </table>
-
-          </td>
-          <td>
-            <table class='center' width=90%>
-              <tr>
-                <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img> </td>
-                <td class='articleHeader' align='left'> Article title </td>
-              </tr>
-              <tr>
-                <td align='left' class='articleDescription'> Article description </td>
-              </tr>
-              <tr>
-                <td align='left' class='articleAuthor'> by Author - Date </td>
-            </table>
-
-          </td>
-        </tr>
-
-        <!-- ARTICLE PAIR ROW 4 -->
-
-        <tr>
-          <tr>
-            <td>
-
-              <table class='center' width=90% >
-                <tr>
-                  <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img></td>
-
-                  <td class='articleHeader' align='left'> Article title </td>
-                </tr>
-                <tr>
-                  <td align='left' class='articleDescription'> Article description </td>
-                </tr>
-                <tr>
-                  <td align='left' class='articleAuthor'> by Author - Date </td>
-              </table>
-
-            </td>
-            <td>
-              <table class='center' width=90%>
-                <tr>
-                  <td width='30%' rowspan='3'> <img src='profilePicture.png' class='profilePicture'> </img> </td>
-                  <td class='articleHeader' align='left'> Article title </td>
-                </tr>
-                <tr>
-                  <td align='left' class='articleDescription'> Article description </td>
-                </tr>
-                <tr>
-                  <td align='left' class='articleAuthor'> by Author - Date </td>
-              </table>
-
-            </td>
-          </tr>
-        </tr>
       </table>
+      <table class='center' width='90%'>
+        <tr>
+          <td>
+            <table class='articleTables' >
+              <tr>
+                <!-- MAIN ARTICLE HERE (USE SPECIFIC FONT SIZE NOT 'articleHeader' HERE)-->
+                <td style='vertical-align:top;text-align:left; border:none;' width='20%'>
+                <p style='font-size:30px'> <a href='articleTEMPLATE.html' target='myiframe'> The quick brown fox jumps over the lazy dog </a></p>
+                <p class='articleDescription'> An intro to over-eager canines and lethargic carnivores </p>
+                <p class='articleDescription'> by <a href='bloggerPageTEMPLATE.html' target='myiframe' class='articleAuthor'><b> Joe Bloggs </b> </a> </p>
+                <!-- SUB ARTICLE 1 RIGHT -->
+                </td>
+                <td width='50%' style='vertical-align:top'> <img src='fox.jpg' width=100%></td>
+                <td width='30%' style='border:none'>
+                  <table>
+                    <tr><td style='vertical-align:top; border:none;'> <img src='bird.jpg' width=100%></td></tr>
+                    <tr>
+                      <td style='vertical-align:top;text-align:left; border:none;' width='20%'>
+                        <p class='articleHeader'> <a href='articleTEMPLATE.html' target='myiframe'> The science behind why birds are so cute </a></p>
+                        <p class='articleDescription'> A adventure into the chemicals controlling your brain </p>
+                        <p class='articleDescription'> by <a href='bloggerPageTEMPLATE.html' target='myiframe' class='articleAuthor'><b> Arthur Morgan </b> </a> </p>
+                      </td>
+                    </tr>
+                  </td>
+                </tr>
+              </table>
+            </table>
+
+            <br>
+            <br>
+
+            <table class='center' width='100%'>
+              <tr>
+                <td width='50%' style='border:none'>
+                  <table>
+                    <tr>
+                      <td width='50%' style='vertical-align:top;text-align:left; border:none'>
+                        <p class='articleHeader'> <a href='articleTEMPLATE.html' target='myiframe'> How astrophysics can save your life </a></p>
+                        <p class='articleDescription'> A dive into an unseemingly fascinating subject </p>
+                        <p class='articleDescription'> by <a href='bloggerPageTEMPLATE.html' target='myiframe' class='articleAuthor'><b> Micah Bell </b> </a> </p>
+                      </td>
+                      <td width='50%' style='border:none'>
+                        <img src='astrophysics.jpg' width=100%>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td width='25%'>
+                  <table style='border:none;'>
+                    <tr>
+                      <td style='vertical-align:top;text-align:left; border:none' width='20%'>
+                        <p class='articleHeader'> <a href='articleTEMPLATE.html' target='myiframe'> KLASS MUN Jakarta Sign Up Open </a></p>
+                        <p class='articleDescription'> Join the MUN team today </p>
+                        <p class='articleDescription'> by <a href='bloggerPageTEMPLATE.html' target='myiframe' class='articleAuthor'><b> John Price </b> </a> </p>
+                      </td>
+                    </tr>
+                  </td>
+                </tr>
+              </table>
+
+                </td>
+                <td width='25%' style='border:none'>
+                  <table>
+                    <tr>
+                      <td style='vertical-align:top;text-align:left; border:none' width='20%'>
+                        <p class='articleHeader'> <a href='articleTEMPLATE.html' target='myiframe'> Coping With Covid: How I did it </a></p>
+                        <p class='articleDescription'> Tips for getting through lockdown </p>
+                        <p class='articleDescription'> by <a href='bloggerPageTEMPLATE.html' target='myiframe' class='articleAuthor'><b> Sheila.B </b> </a> </p>
+                      </td>
+                    </tr>
+                  </td>
+                </tr>
+              </table>
+                </td>
+              </tr>
+            </table>
+
+            <br>
+            <br>
+
+            <table class='articleTables' >
+              <tr>
+                <!-- MAIN ARTICLE HERE (USE SPECIFIC FONT SIZE NOT 'articleHeader' HERE)-->
+                <td style='vertical-align:top;text-align:left; border:none;' width='20%'>
+                <p style='font-size:30px'> <a href='articleTEMPLATE.html' target='myiframe'> The history of the acoustic guitar </a></p>
+                <p class='articleDescription'> The fretted instrument fraught with a fatal past  </p>
+                <p class='articleDescription'> by <a href='bloggerPageTEMPLATE.html' target='myiframe' class='articleAuthor'><b> Darwin Watterson </b> </a> </p>
+                <!-- SUB ARTICLE 1 RIGHT -->
+                </td>
+                <td width='50%' style='vertical-align:top'> <img src='guitar.jpg' width=100%></td>
+                <td width='30%' style='border:none'>
+                  <table>
+                    <tr><td style='vertical-align:top; border:none;'> <img src='biology.png' width=100%></td></tr>
+                    <tr>
+                      <td style='vertical-align:top;text-align:left; border:none;' width='20%'>
+                        <p class='articleHeader'> <a href='articleTEMPLATE.html' target='myiframe'> Why you should take Biology as a GCSE </a></p>
+                        <p class='articleDescription'> Discover the science that makes you, you </p>
+                        <p class='articleDescription'> by <a href='bloggerPageTEMPLATE.html' target='myiframe' class='articleAuthor'><b> Tim Hardaway </b> </a> </p>
+                      </td>
+                    </tr>
+                  </td>
+                </tr>
+              </table>
+
+            </table>
+
 
 </div>
 

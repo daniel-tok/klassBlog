@@ -17,7 +17,7 @@
          background-position: center;
          background-repeat: no-repeat;
          background-size: cover;}
-.item2 { grid-area: menu; }
+.item2 { grid-area: menu;}
 .item3 { grid-area: articles}
 .item4 { grid-area: footer; }
 .item5 { grid-area: navBar}
@@ -25,13 +25,14 @@
 .grid-container {
   display: grid;
   grid-template-areas:
-    'navBar navBar navBar navBar navBar navBar'
+    'navBar navBar navBar navBar navBar navBar '
     'header  header header header header header'
     'menu articles articles articles articles articles'
     'footer footer footer footer footer footer ';
   grid-gap: 5px;
   background-color: grey;
   padding: 10px;
+  grid-template-columns: 20% 80%
 }
 
 .grid-container > div {
