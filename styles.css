@@ -11,6 +11,12 @@ a:hover {
   color: #C71000
 }
 
+
+.genreType {
+  font-size:15px;
+  color:red
+}
+
 .subjectLinks {
   display:block;
   color: grey
