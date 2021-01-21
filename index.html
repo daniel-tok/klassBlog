@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 <style>
 .item1 { grid-area: header;
-         background-image: url(colorSplash.jpg);
+         background-image: url(lightBlue.jpg);
          background-attachment: fixed;
          background-position: center;
          background-repeat: no-repeat;
@@ -20,7 +20,8 @@
 .item2 { grid-area: menu;}
 .item3 { grid-area: articles}
 .item4 { grid-area: footer; }
-.item5 { grid-area: navBar}
+.item5 { grid-area: navBar;}
+
 
 .grid-container {
   display: grid;
@@ -30,9 +31,9 @@
     'menu articles articles articles articles articles'
     'footer footer footer footer footer footer ';
   grid-gap: 5px;
-  background-color: grey;
+  background-color: white;
   padding: 10px;
-  grid-template-columns: 20% 80%
+  grid-template-columns: 20% 80%;
 }
 
 .grid-container > div {
@@ -53,6 +54,16 @@ th, td {
     padding: 15px;
     }
 
+.zoom {
+      transition: transform .2s;
+    }
+
+.zoom:hover {
+      transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+
+
+
 </style>
 
 </head>
@@ -60,7 +71,7 @@ th, td {
 
 
   <div class="grid-container">
-    <div class='item5' style='background-color:#3D3E3D; color:white;'>
+    <div class='item5' style='background-color:#1c1c1c; color:white; z-index:1'>
       <table align='left'>
         <tr>
           <td style='border-left: none'></td>
@@ -77,8 +88,8 @@ th, td {
 
 
   <div class="item1">
-      <p style='font-size: 80px; color: white'> The KLASS Student Blog </p>
-      <p style='font-size: 20px; color: white'> A place for KLASS students to post what's on their minds. </p>
+      <p style='font-size: 80px; color: black' class='zoom'> The KLASS Student Blog </p>
+      <p style='font-size: 20px; color: black' class='zoom'> A place for KLASS students to post what's on their minds. </p>
   </div>
 
   <div class="item2">
@@ -130,10 +141,10 @@ th, td {
         </tr>
       </table>
   </div>
-    <div class="item3"><iframe name='myiframe' width=100% height = 100% src='latestArticles.html'></iframe></div>
+    <div class="item3"><iframe name='myiframe' width=100% height=100% src='latestArticles.html'></iframe></div>
 
   </div>
-  <div class="item4" style='text-align: left; font-size: 10px; color:white; background-color:#3D3E3D'>
+  <div class="item4" style='text-align: left; font-size: 10px; color:white; background-color:#1c1c1c'>
       <table>
         <tr>
           <td style='border:none'></td>
