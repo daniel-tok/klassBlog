@@ -5,13 +5,13 @@
 <link rel='stylesheet' href='styles.css'>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-<style>
+<body>
+    <style>
 .item3 { grid-area: articles}
 
 .grid-container {
   display: grid;
-  grid-template-areas:
-    'articles';
+  grid-template-areas: 'articles';
   grid-gap: 5px;
   background-color: grey;
   padding: 10px;
@@ -35,15 +35,135 @@ th, td {
     padding: 15px;
     }
 
+mark {
+  background-color: plum;
+  color: black;
+}
 </style>
-
-</head>
 <body>
+</head>
+
 
 <!-- EDIT INSIDE THIS BLOCK UNDER 'ITEM 3' -->
-  <div class="grid-container">
-    <div class="item3">CONTRIBUTE</div>
+ <div class="grid-container">
+    <div class="item3">
+      <table class='center' style='width:90%' >
+        <tr style='border-bottom: 1px solid black;' >
+          <td style='font-size: 80px; border:none'> CONTRIBUTE </td>
+        </tr>
+      </table>
+        <br>
+        <p style='font-size: 25px'> Say your piece to the KLASS community. </p>
+        <br>
+        <table class = 'center' style = 'width=75%' bgcolor = #f8edeb>
+            <tr>
+              <td width='20%' style='font-size:50px; border-right: 1px solid black; border-left:none'>STEP 1</td>
+                <td style='border-right:none' class='articleText'>
+                    <p>
+                        Fill in the form below indicating your name, tutor group, proposed article title and a
+                        brief one or two sentence summary regarding your topic of choice in the form below.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+          <td width='20%' style='font-size:50px; border-right: 1px solid black; border-left:none'>STEP 2</td>
+          <td style='border-right:none' class='articleText'>
+            <p>
+               Await approval from us. We're happy to pick ideas that are intriguing and unique, whilst also being appropriate
+               for the school. In other words, if you wouldn't read your article to Mr Slade, then it probably shouldn't be on here.
+            </p>
+          </td>
+        </tr>
+        <tr>
+            <td width='20%' style='font-size:50px; border-right: 1px solid black; border-left:none'>STEP 3</td>
+          <td style='border-right:none' class='articleText'>
+            <p>
+               Once you have the green light to proceed with the article, send the final draft and a short bio about you to any
+               of the emails below. We're very flexible with deadlines, but we would like to see it at least
+               one to two weeks after approval. We'll edit and send it for approval to the school.
+            </p>
+          </td>
+          <tr>
+          <td width='20%' style='font-size:50px; border-right: 1px solid black; border-left:none'>STEP 4</td>
+        <td style='border-right:none' class='articleText'>
+          <p>
+             If Alice Smith approves of the article, we'll contact you and put it on our short list. We update the <a href='latestArticles.html' target='myiframe'> front page</a>
+             every 2 weeks or whenever we have 7 articles in our short list, so sit tight for now.
+          </p>
+        </td>
+        </tr>
+        <tr>
+        <td width='20%' style='font-size:50px; border-right: 1px solid black; border-left:none'>STEP 5</td>
+      <td style='border-right:none' class='articleText'>
+        <p>
+           Congratulations on becoming a KLASS blogger! Check out your article on the front page
+           and your own personalised bio page. Contact us below if you'd like to become a regular blogger for the site.
+        </p>
+      </td>
+      </tr>
+        </table>
+
+        <br>
+        <br>
+        <br>
+
+
+<table class = 'center' style='border-spacing:0; border-collapse:collapse'>
+    <td width ='40%' style='border-left:none'>
+  <tr>
+    <th style='border-left:none'>
+    <form action="mailto:22annushkaa@alice-smith.edu.my.com" method="post" enctype="text/plain">
+      <tr>
+        <td style='border-left:none'>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        </td>
+        <td style='border-right:none'>
+          <label for="articletitle">Article Title:</label><br>
+          <input size='50' type="text" id="articletitle" name="articletitle" value="" placeholder="Make it engaging"><br><br>
+        </td>
+      </tr>
+      <tr>
+        <td style='border-left:none'>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br><br>
+        </td>
+        <td style='border-right:none'>
+          <label for="title">Enter Article Entry: </label>
+          <br>
+          <br>
+      <textarea rows="10" cols="50"></textarea>
+      </td>
+      </tr>
+      <tr>
+        <td style='border-left:none'>
+          <label for="tgrp">Tutor Group:</label><br>
+          <input type="text" id="tgrp" name="tgrp" value=""><br><br>
+        </td>
+        <td style='border:none'><input type="submit" value="Submit"></td>
+      </tr>
+      </form>
+    </th>
+  </tr>
+</table>
+
+<br>
+<br>
+ <p> ------------------------Contact Us! ------------------------</p>
+
+    <br>
+        <br>
+    Daniel Tok - 22danielto@alice-smith.edu.my
+        <br>
+    Annushka Arun - 22annushkaa@alice-smith.edu.my
+        <br>
+    Zhen Wei Yap - 22zhenweiy@alice-smith.edu.my
+        <br>
+    Tyler Lewis - 22tylerl@alice-smith.edu.my
+
+
+
+   </div>
   </div>
 
-</body>
 </html>
