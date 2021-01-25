@@ -35,10 +35,22 @@ a:hover {
 }
 
 
+.readMore {
+  border: 1px solid red;
+  padding:5px;
+}
+
+.readMore:hover {
+  background-color: red;
+  color:white;
+  text-decoration: none;
+}
+
 .articleTables {
   border-spacing: 0;
   border-collapse:collapse;
 }
+
 
 .authorName {
   color: black

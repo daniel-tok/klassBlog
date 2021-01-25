@@ -1,1 +1,70 @@
-<!--#include virtual="/menu.shtml" -->
+<!DOCTYPE html>
+<html>
+<!-- YOU CAN IGNORE ALL THIS -->
+<head>
+<link rel='stylesheet' href='styles.css'>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<style>
+.item3 { grid-area: articles}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'articles';
+  grid-gap: 5px;
+  background-color: grey;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+table { border-collapse: separate;
+      border-spacing:10px}
+
+tr {border: none;}
+
+th, td {
+    word-wrap: break-word;
+    padding: 5px;
+    }
+
+</style>
+
+</head>
+<body>
+
+
+  <div class="grid-container">
+    <div class="item3">
+      <table class='center' width='70%' style='text-align:left'>
+        <tr>
+          <td style='font-size:20px; color:red; border-bottom:1px solid grey'> LITERATURE </td>
+        </tr>
+        <tr>
+          <td style='font-size:50px'>The Quick Brown Fox Jumps Over The Lazy Dog by <a href='bloggerPageTEMPLATE.html' style='color:red'><span>Joe Bloggs </span></a></td>
+          <td width='20%'align='center'><img src='profilePicture.png' width=100%> </td>
+        </tr>
+        <tr style='padding:10px;'>
+          <td style='font-size:20px; border-bottom:1px solid grey;'> <br> A guide to overeager canines and lethargic carnivores </td>
+          <td style='border-bottom:1px solid grey;text-align:left; vertical-align:bottom;font-size:15px'><b>About Joe B. '22</b></td>
+        </tr>
+        <tr>
+          <td style='border-bottom:1px solid grey;'><img src='fox.jpg' width=100%></td>
+          <td style='text-align:left; vertical-align:top;font-size:15px'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... <p><a class='readMore' href='bloggerPageTEMPLATE.html'> READ MORE </a></p></td>
+        </tr>
+        <tr>
+          <td style='font-size:20px; color:#565656'>
+            <p> Vaccines reduce deaths and hospital admissions in two ways: they protect the vaccinated directly, stopping them becoming ill; and they offer indirect protection to the unvaccinated, because those already jabbed will be less likely to infect them. Measuring the combined effect—and how quickly it kicks in—is possible only where mass vaccination is well under way. But early results are starting to arrive. </p> <p> Most countries are vaccinating their elderly first, along with health-care workers. The preponderance of covid-19 deaths—around 85% in England, for example—are of people aged 70 or over (see chart 1). People on covid-19 hospital wards are often that age, too. Hospital admission rates and deaths should both, therefore, fall sharply a few weeks after a large share of the elderly get their first jab. </p> <p> Hospitals will nevertheless struggle until lots of middle-aged people are also vaccinated. This is because, at the moment, the worst pressure is on intensive-care units (icus), and most patients in these are in their 50s and 60s. That may seem odd, given the higher death rates among the elderly. But ventilators and other organ-support machines impose a lot of stress on the body, and older people are often too frail to be put on them. </p> Covid icus at English hospitals, for example, currently treat about as many patients aged 20-49 as patients aged 70 or more.</p><p>This pattern means that where vaccination is slow, the number of covid-related deaths of middle-aged people may increase in coming weeks and months, as icus fill up. Normally, these units have one nurse per patient. Increasingly, however, icu nurses are having to care for several patients each. Two recent studies, one from England and one from Israel, have concluded that when the covid icus they looked at were filled to maximum capacity, mortality in them was some 20-25% higher than would have been expected given the characteristics of the patients involved.</p>
+          </td>
+      </table>
+
+
+    </div>
+  </div>
+
+</body>
+</html>
