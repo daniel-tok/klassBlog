@@ -8,6 +8,7 @@
 <link rel='stylesheet' href='styles.css'>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
 <style>
 .item1 { grid-area: header;
          background-image: url(aliceSmith.jpg);
@@ -19,20 +20,21 @@
 .item3 { grid-area: articles}
 .item4 { grid-area: footer; }
 .item5 { grid-area: navBar;}
+.item6 { grid-area: whiteS}
 
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'navBar navBar navBar navBar navBar navBars '
-    'header header header header header header'
-    'menu articles articles articles articles articles'
-    'footer footer footer footer footer footer ';
+    'navBar navBar navBar navBar navBar navBars whiteS'
+    'header header header header header header whiteS'
+    'menu articles articles articles articles articles whiteS'
+    'footer footer footer footer footer footer whiteS';
   grid-gap: 5px;
   background-color: white;
   padding: 10px;
   grid-template-columns: 20% 80%;
-  grid-template-rows: auto 400px 1500px
+  grid-template-rows: auto 475px 1500px
 }
 
 .grid-container > div {
@@ -91,13 +93,12 @@ iframe{
         <tr>
           <td style='border-left: none'></td>
           <td><a href='https://sites.google.com/alice-smith.edu.my/epstudentgateway/home?authuser=0'><img src="alice-smithIcon.png" height=80px width=80px border-width=5px></a></td>
-          <td> The Alice Smith School </td>
+          <td> <a href='https://sites.google.com/alice-smith.edu.my/epstudentgateway/home?authuser=0'>The Alice Smith School </a></td>
           <td> <a href='latestArticles.html' target='myiframe'> HOME </a> </td>
           <td> <a href='about.html' target='myiframe'> ABOUT </a> </td>
           <td> <a href='team.html' target='myiframe' > TEAM </a> </td>
           <td> <a href='events.html' target='myiframe' > EVENTS </a> </td>
           <td> <a href='contribute.html' target='myiframe' > CONTRIBUTE </a> </td>
-          <td style='size:10px'> v0.9 article pages live (site is a WIP) note: all articles are fabricated</td>
         </tr>
       </table>
     </div>
@@ -157,7 +158,9 @@ iframe{
         </tr>
       </table>
   </div>
-    <div class="item3"><iframe name='myiframe' width='100%' height='100%' src='latestArticles.html'></iframe></div>
+    <div class="item3">
+      <iframe src="latestArticles.html" name='myiframe' height=100%></iframe>
+    </div>
 
   </div>
   <div class="item4" style='text-align: left; font-size: 10px; color:white; background-color:#1c1c1c'>

@@ -12,7 +12,7 @@
   display: grid;
   grid-template-areas: 'articles';
   grid-gap: 5px;
-  background-color: grey;
+  background-color: white;
   padding: 10px;
   border-spacing:10px
 }
@@ -30,10 +30,36 @@ tr {border: none;}
 
 th, td {
     word-wrap: break-word;
-    border-left: solid 1px;
-    border-right: solid 1px;
-    padding: 15px;
+    padding: 5px;
     }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        vertical-align: top
+      }
+    }
+
+
 
 </style>
 
@@ -42,8 +68,46 @@ th, td {
 
 <!-- EDIT INSIDE THIS BLOCK UNDER 'ITEM 3' -->
   <div class="grid-container">
-    <div class="item3"> blogger bio (tyler pls)</div>
+    <div class="item3" style='align-items:left'>
+      <table class='center' style='text-align:left;' width=90%>
+        <tr>
+          <td>
+            <div style='text-align:left'>
+              <img src='zhen.jpg' width=200 align='right'>
+              <p style='font-size:60px;'><b> Zhen Wei Yap</b> </p>
+              <p> Year 12 <span style='color:red'>• </span> 22zhenw@alice-smith.edu.my</p>
+            </div>
+        </td>
+        <tr>
+          <td style='border-bottom:1px solid black' colspan='2'> <b> Biography </b></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="row">
+            <div class="column">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            </div>
+            <div class="column">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </tr>
+        <tr>
+          <td style='border-bottom:1px solid black' colspan='2'> <b> Recent Posts </b></td>
+        </tr>
+      </table>
+
+
+
+    </div>
   </div>
 
 </body>
+
+
 </html>

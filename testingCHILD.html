@@ -1,0 +1,176 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>iFrame Test Thank-you Page</title>
+<link rel='stylesheet' href='styles.css'>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+<style>
+.item3 { grid-area: articles}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'articles';
+  grid-gap: 5px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+table { border-collapse: collapse;
+        table-layout: auto;}
+
+
+tr {border: none;}
+
+th, td {
+    word-wrap: break-word;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    padding: 15px;
+    }
+
+</style>
+
+</head>
+<body style="margin-top:0;">
+
+    <div class="grid-container">
+    <div class="item3">
+        <table class='center' width=90%>
+          <tr>
+            <td style='border:none; font-size: 80px' align='left' colspan='2' >Latest posts </td>
+          </tr>
+        </table>
+        <table class='center' width='90%'>
+          <tr>
+            <td>
+              <table class='articleTables' >
+                <tr>
+                  <!-- MAIN ARTICLE HERE (USE SPECIFIC FONT SIZE NOT 'articleHeader' HERE)-->
+                  <td style='vertical-align:top;text-align:left; border:none;' width='20%'>
+                    <p class='genreType'> LITERATURE </p>
+                    <p style='font-size:30px'> <a href='articleTEMPLATE.html' target='myiframe'> The quick brown fox jumps over the lazy dog </a></p>
+                    <p class='articleDescription'> An intro to over-eager canines and lethargic carnivores </p>
+                    <p class='articleDescription'> by <a href='bloggerPageTEMPLATE.html' target='myiframe' class='articleAuthor'><b> Joe Bloggs </b> </a> </p>
+                  <!-- SUB ARTICLE 1 RIGHT -->
+                  </td>
+                  <td width='50%' style='vertical-align:top'> <img src='fox.jpg' width=100%></td>
+                  <td width='30%' style='border:none'>
+                    <table>
+                      <tr><td style='vertical-align:top; border:none;'> <img src='bird.jpg' width=100%></td></tr>
+                      <tr>
+                        <td style='vertical-align:top;text-align:left; border:none;' width='20%'>
+                          <p class='genreType'> SCIENCE </p>
+                          <p class='articleHeader'> <a href='articleTEMPLATE.html' target='myiframe'> The science behind why birds are so cute </a></p>
+                          <p class='articleDescription'> An adventure into the chemicals controlling your brain </p>
+                          <p class='articleDescription'> by <a href='bloggerPageTEMPLATE.html' target='myiframe' class='articleAuthor'><b> Arthur Morgan </b> </a> </p>
+                        </td>
+                      </tr>
+                    </td>
+                  </tr>
+                </table>
+              </table>
+
+              <br>
+              <br>
+
+              <table class='center' width='100%'>
+                <tr>
+                  <td width='50%' style='border:none'>
+                    <table>
+                      <tr>
+                        <td width='50%' style='vertical-align:top;text-align:left; border:none'>
+                          <p class='genreType'> SCIENCE </p>
+                          <p class='articleHeader'> <a href='articleTEMPLATE.html' target='myiframe'> How astrophysics can save your life </a></p>
+                          <p class='articleDescription'> A dive into an unseemingly fascinating subject </p>
+                          <p class='articleDescription'> by <a href='bloggerPageTEMPLATE.html' target='myiframe' class='articleAuthor'><b> Micah Bell </b> </a> </p>
+                        </td>
+                        <td width='50%' style='border:none'>
+                          <img src='astrophysics.jpg' width=100%>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td width='25%'>
+                    <table style='border:none;'>
+                      <tr>
+                        <td style='vertical-align:top;text-align:left; border:none' width='20%'>
+                          <p class='genreType'> ECAS </p>
+                          <p class='articleHeader'> <a href='articleTEMPLATE.html' target='myiframe'> KLASS MUN Jakarta Sign Up Open </a></p>
+                          <p class='articleDescription'> Join the MUN team today </p>
+                          <p class='articleDescription'> by <a href='bloggerPageTEMPLATE.html' target='myiframe' class='articleAuthor'><b> John Price </b> </a> </p>
+                        </td>
+                      </tr>
+                    </td>
+                  </tr>
+                </table>
+
+                  </td>
+                  <td width='25%' style='border:none'>
+                    <table>
+                      <tr>
+                        <td style='vertical-align:top;text-align:left; border:none' width='20%'>
+                          <p class='genreType'> #LOCKDOWN </p>
+                          <p class='articleHeader'> <a href='articleTEMPLATE.html' target='myiframe'> Coping With Covid: How I did it </a></p>
+                          <p class='articleDescription'> Tips for getting through lockdown </p>
+                          <p class='articleDescription'> by <a href='bloggerPageTEMPLATE.html' target='myiframe' class='articleAuthor'><b> Sheila.B </b> </a> </p>
+                        </td>
+                      </tr>
+                    </td>
+                  </tr>
+                </table>
+                  </td>
+                </tr>
+              </table>
+
+              <br>
+              <br>
+
+              <table class='articleTables' >
+                <tr>
+                  <!-- MAIN ARTICLE HERE (USE SPECIFIC FONT SIZE NOT 'articleHeader' HERE)-->
+                  <td style='vertical-align:top;text-align:left; border:none;' width='20%'>
+                    <p class='genreType'> HISTORY </p>
+                  <p style='font-size:30px'> <a href='articleTEMPLATE.html' target='myiframe'> The history of the acoustic guitar </a></p>
+                  <p class='articleDescription'> The fretted instrument fraught with a fatal past  </p>
+                  <p class='articleDescription'> by <a href='bloggerPageTEMPLATE.html' target='myiframe' class='articleAuthor'><b> Darwin Watterson </b> </a> </p>
+                  <!-- SUB ARTICLE 1 RIGHT -->
+                  </td>
+                  <td width='50%' style='vertical-align:top'> <img src='guitar.jpg' width=100%></td>
+                  <td width='30%' style='border:none'>
+                    <table>
+                      <tr><td style='vertical-align:top; border:none;'> <img src='biology.png' width=100%></td></tr>
+                      <tr>
+                        <td style='vertical-align:top;text-align:left; border:none;' width='20%'>
+                          <p class='genreType'> SCIENCE </p>
+                          <p class='articleHeader'> <a href='articleTEMPLATE.html' target='myiframe'> Why you should take Biology as a GCSE </a></p>
+                          <p class='articleDescription'> Discover the science that makes you, you </p>
+                          <p class='articleDescription'> by <a href='bloggerPageTEMPLATE.html' target='myiframe' class='articleAuthor'><b> Tim Hardaway </b> </a> </p>
+                        </td>
+                      </tr>
+                    </td>
+                  </tr>
+                </table>
+
+              </table>
+
+
+  </div>
+
+
+<script type="text/javascript">
+parent.AdjustIframeHeight(document.getElementById("page-container").scrollHeight);
+</script>
+
+</body>
+</html>
