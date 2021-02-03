@@ -1,9 +1,85 @@
-<script language="javascript" type="text/javascript">
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-  }
-</script>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' href='styles.css'>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
-<div class="resizable">
-    <iframe src="latestArticles.html" frameborder="0" width="100%" height="100%" onload="resizeIframe(this)"></iframe>
+<style>
+.item1 { grid-area: header; }
+.item3 { grid-area: main; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'header'
+  'main'
+  'footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.article1 { grid-area: article1;}
+.article2 { grid-area: article2; }
+.article3 { grid-area: article3; }
+.article4 { grid-area: article4; }
+.article5 { grid-area: article5; }
+.article6 { grid-area: article6; }
+.article7 { grid-area: article7; }
+
+.article-container {
+  display: grid;
+  grid-template-areas:
+  'article1 article1 article1 article1 article2 article2'
+  'article3 article3 article4 article4 article5 article5'
+  'article6 article6 article6 article6 article7 article7';
+  grid-gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color:white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="item1">Header</div>
+  <div class="item3">
+    <div class='article-container'>
+      <div class='article1'>article1</div>
+      <div class='article2'>article2</div>
+      <div class='article3'>article3</div>
+      <div class='article4'>article4</div>
+      <div class='article5'>article5</div>
+      <div class='article6'>article6</div>
+      <div class='article7'>article7</div>
+    </div>
+
+  </div>
+  <div class="item5" style='text-align: left; font-size: 10px; color:white; background-color:#1c1c1c'>
+    <table border:white>
+      <td width='10vh'></td>
+      <td> FIND US </td>
+      <td><b> Secondary Campus </b> <br>
+          3 Jalan Equine, Taman Equine,<br>
+          43300 Seri Kembangan,<br>
+          Selangor, Malaysia<br>
+          Phone: +603 9543 3688<br>
+          Hours<br>
+          Monday—Friday: 7:30AM–5:00PM <br>
+        </td>
+    </table>
+  </div>
 </div>
+
+</body>
+</html>

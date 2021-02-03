@@ -56,6 +56,10 @@ th, td {
     padding: 15px;
     }
 
+    body {
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+
 .zoom {
       transition: transform .2s;
     }
@@ -83,6 +87,13 @@ iframe{
   width:100%;
 }
 
+.content {
+    padding:20px;
+    width:710px;
+    position:relative;
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(204, 204, 204, 0.5);
+}
 </style>
 
 </head>
@@ -106,8 +117,8 @@ iframe{
 
 
   <div class="item1">
-      <p style='font-size: 80px; color: white' class='zoom'> The KLASS Student Blog </p>
-      <p style='font-size: 20px; color: white' class='zoom'> A place for KLASS students to post what's on their minds. </p>
+      <p style='font-size: 80px;' class='zoom'> <mark style='background: rgba(0, 0, 0, 0.5); color:white'>The KLASS Student Blog </mark></p>
+      <p style='font-size: 20px;' class='zoom'> <mark style='background: rgba(0, 0, 0, 0.5); color:white'> A place for KLASS students to post what's on their minds. </mark> </p>
   </div>
 
   <div class="item2">
