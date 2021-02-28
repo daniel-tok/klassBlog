@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<!-- YOU CAN IGNORE ALL THIS -->
+<head>
+<link rel='stylesheet' href='styles.css'>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<style>
+.item3 { grid-area: articles}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'articles';
+  grid-gap: 5px;
+  background-color: white;
+  padding: 10px;
+  border-spacing:10px
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+table { border-spacing:10px;
+        table-layout: auto;}
+
+tr {border: none;}
+
+th, td {
+    word-wrap: break-word;
+    padding: 5px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        vertical-align: top
+      }
+    }
+
+
+
+</style>
+
+</head>
+<body>
+
+<!-- EDIT INSIDE THIS BLOCK UNDER 'ITEM 3' -->
+  <div class="grid-container">
+    <div class="item3" style='align-items:left'>
+      <table class='center' style='text-align:left;' width=90%>
+        <td style='font-size:20px; color:red; border-bottom:1px solid grey; vertical-align:center'>
+          <p><a class='readMore' href='team.html'> ◄ </a></p>
+
+        </td>
+        <tr>
+          <td>
+            <div style='text-align:left'>
+              <img src='priasha.png' width=200 align='right'>
+              <p style='font-size:60px;'><b> Priasha Choudhary</b> </p>
+              <p> Year 11 <span style='color:red'>• </span> 23priashac@alice-smith.edu.my</p>
+            </div>
+        </td>
+        <tr>
+          <td style='border-bottom:1px solid black' colspan='2'> <b> Biography </b></td>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              I’ve been at KLASS since 2018 though I grew up in East Malaysia. I'm a certified bookworm. I have a growing interest in areas of Biology and I'm fascinated with Psychology (how the brain works), Computer Science and Current Affairs. My Spotify favourites includes songs from a range of artists and some great podcasts. I admire great quotes but I despise cheesy and overused ones. I’m open minded and most topics interest me.This will be my first attempt at writing for the public and I hope to cover a range of topics in my work.
+            </p>
+        </tr>
+        <tr>
+          <td style='border-bottom:1px solid black' colspan='2'> <b> Recent Posts </b></td>
+        </tr>
+      </table>
+
+
+
+    </div>
+  </div>
+
+</body>
+
+
+</html>
