@@ -8,6 +8,13 @@
 <style>
 .item3 { grid-area: articles}
 
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
 .grid-container {
   display: grid;
   grid-template-areas: 'articles';
@@ -71,7 +78,7 @@ th, td {
     <div class="item3" style='align-items:left'>
       <table class='center' style='text-align:left;' width=90%>
         <td style='font-size:20px; color:red; border-bottom:1px solid grey; vertical-align:center'>
-          <p><a class='readMore' href='team.html'> ◄ </a></p>
+          <input type="button" value="◄" onclick="history.back()">
 
         </td>
         <tr>
