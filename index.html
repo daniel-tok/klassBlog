@@ -5,37 +5,36 @@
 <!-- posts written by <> -->
 
 <head>
-<title> KLASS Student Blog </title>
+<title> The KLASS Journal </title>
 <link rel='stylesheet' href='styles.css'>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
 <style>
-.item1 { grid-area: header;
+.header { grid-area: header;
          background-image: url(aliceSmith.jpg);
          background-attachment: fixed;
          background-position: center;
          background-repeat: no-repeat;
          background-size: cover;}
-.item2 { grid-area: menu;}
-.item3 { grid-area: articles}
-.item4 { grid-area: footer; }
-.item5 { grid-area: navBar;}
-.item6 { grid-area: whiteS}
+.menu { grid-area: menu;}
+.articles { grid-area: articles}
+.footer { grid-area: footer; }
+.navBar { grid-area: navBar;}
 
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'navBar navBar navBar navBar navBar navBars whiteS'
-    'header header header header header header whiteS'
-    'menu articles articles articles articles articles whiteS'
-    'footer footer footer footer footer footer whiteS';
+    'navBar navBar navBar navBar navBar navBar'
+    'header header header header header header'
+    'articles articles articles articles articles articles'
+    'footer footer footer footer footer footer';
   grid-gap: 5px;
   background-color: white;
   padding: 10px;
   grid-template-columns: 20% 80%;
-  grid-template-rows: auto auto 1500px
+  grid-template-rows: auto auto 1600px
 }
 
 .grid-container > div {
@@ -75,10 +74,7 @@ th, td {
       'header header header header header header'
       'articles articles articles articles articles articles'
       'footer footer footer footer footer footer';
-        }
-  .item5 {
-    font-size: 10px
-  }
+      }
     }
 
 
@@ -100,7 +96,7 @@ iframe{
 <body>
 
   <div class="grid-container">
-    <div class='item5' style='background-color:#1c1c1c; color:white; z-index:1'>
+    <div class='navBar' style='background-color:#1c1c1c; color:white; z-index:1'>
       <table align='left'>
         <tr>
           <td style='border-left: none'></td>
@@ -111,71 +107,32 @@ iframe{
           <td> <a href='team.html' target='myiframe' > TEAM </a> </td>
           <td> <a href='events.html' target='myiframe' > EVENTS </a> </td>
           <td> <a href='contribute.html' target='myiframe' > CONTRIBUTE </a> </td>
+          <td>
+            <div class="dropdown">
+              <button class="dropbtn">☰ GATEWAY</button>
+              <div class="dropdown-content">
+                <a href='https://sites.google.com/alice-smith.edu.my/epstudentgateway/home'>GSite </a>
+                <a href='https://sites.google.com/a/alice-smith.edu.my/ks3/' class='subjectLinks'> KS3 </a>
+                <a href='https://sites.google.com/a/alice-smith.edu.my/ks4/' class='subjectLinks'> KS4 </a>
+                <a href='https://sites.google.com/alice-smith.edu.my/sixthform/home' class='subjectLinks'> Sixth Form </a>
+              </div>
+            </div>
+          </td>
         </tr>
       </table>
     </div>
 
 
-  <div class="item1">
+  <div class="header">
       <p style='font-size: 80px;' class='zoom'> <mark style='background: rgba(0, 0, 0, 0.5); color:white'>The KLASS Journal </mark></p>
       <p style='font-size: 20px;' class='zoom'> <mark style='background: rgba(0, 0, 0, 0.5); color:white'> A place for KLASS students to post what's on their minds. </mark> </p>
   </div>
-
-  <div class="item2">
-      <table class='center' width='90%'>
-        <tr>
-          <td style='border:none; font-size: 30px'><a href='https://sites.google.com/alice-smith.edu.my/epstudentgateway/home'>Back to Gateway </a> </td>
-        </tr>
-        <tr>
-          <td style='font-size: 25px'> Subjects </td>
-        </tr>
-        <tr>
-          <tr>
-            <td><a href='https://sites.google.com/alice-smith.edu.my/newmathematics-computing/home' class='subjectLinks'>Mathematics & Computing </a></td>
-          </tr>
-        <tr>
-          <td><a href='https://sites.google.com/alice-smith.edu.my/newscience-dt/home' class='subjectLinks'>Science & DT </a></td>
-        </tr>
-        <tr>
-          <td><a href='https://sites.google.com/alice-smith.edu.my/english-and-media-faculty/faculty-home' class='subjectLinks'>English & Media </a></td>
-        </tr>
-        <tr>
-          <td><a href='https://sites.google.com/alice-smith.edu.my/newhumanities/home' class='subjectLinks'>Humanities</a></td>
-        </tr>
-        <tr>
-          <td><a href='https://sites.google.com/alice-smith.edu.my/pe-and-sports-ep/home' class='subjectLinks'>PE & Sport </a></td>
-        </tr>
-        <tr>
-          <td><a href='https://sites.google.com/alice-smith.edu.my/klassmodernforeignlanguages/home' class='subjectLinks'>MFL </a></td>
-        </tr>
-        <tr>
-          <td><a href='https://sites.google.com/alice-smith.edu.my/cearts/home' class='subjectLinks'>CEA </a></td>
-        </tr>
-        <tr>
-          <td><a href='https://sites.google.com/a/alice-smith.edu.my/learning-support-unit/home'class='subjectLinks'>PLF </a></td>
-        </tr>
-        <tr>
-          <td style='font-size: 25px'> Key Stage </td>
-        <tr>
-          <td><a href='https://sites.google.com/a/alice-smith.edu.my/ks3/' class='subjectLinks'> KS3 </a></td>
-        </tr>
-        <tr>
-          <td><a href='https://sites.google.com/a/alice-smith.edu.my/ks4/' class='subjectLinks'> KS4 </a></td>
-        </tr>
-        <tr>
-          <td><a href='https://sites.google.com/a/alice-smith.edu.my/ks4/' class='subjectLinks'> KS4 </a></td>
-        </tr>
-        <tr>
-          <td><a href='https://sites.google.com/alice-smith.edu.my/sixthform/home' class='subjectLinks'> Sixth Form </a></td>
-        </tr>
-      </table>
-  </div>
-    <div class="item3">
-      <iframe src="latestArticles.html" name='myiframe' height=100%></iframe>
+    <div class="articles" width='90%'>
+      <iframe src="latestArticles.html" name='myiframe' height=100% width=200></iframe>
     </div>
 
   </div>
-  <div class="item4" style='text-align: left; font-size: 10px; color:white; background-color:#1c1c1c'>
+  <div class="footer" style='text-align: left; font-size: 10px; color:white; background-color:#1c1c1c'>
 
       <table>
         <tr>
